@@ -1220,9 +1220,11 @@ input[type="radio"] + label:before {
     border-radius: 0.375em;
     display: block; }
   .image.left, .image.right {
-    max-width: 40%; }
+    max-width: 100%;
+    height: auto; }
     .image.left img, .image.right img {
-      width: 100%; }
+      max-width: 100%;
+      height: auto; }
   .image.left {
     float: left;
     padding: 0 1.5em 1em 0;
@@ -1234,15 +1236,17 @@ input[type="radio"] + label:before {
   .image.fit {
     display: block;
     margin: 0 0 2em 0;
-    width: 100%; }
+    max-width: 100%;  }
     .image.fit img {
-      width: 100%; }
+      max-width: 100%;
+      height: auto; }
   .image.main {
     display: block;
     margin: 0 0 3em 0;
     width: 100%; }
     .image.main img {
-      width: 100%; }
+      max-width: 100%;
+      height: auto; }
 
 a.image {
   overflow: hidden; }
