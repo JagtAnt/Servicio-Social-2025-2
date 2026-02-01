@@ -58,9 +58,6 @@ export default function Index() {
                 <p>	Patria, escuela, buque y mar</p>
               </header>
               <p>Fundada en 1811, única universidad en Venezuela que forma profesionales marítimos.</p>
-              <ul className="actions">
-                <li><a href="#" className="button big">Mas Información</a></li>
-              </ul>
             </div>
             <span className="image object">
               <img src="images/pic10.png" alt="" />
