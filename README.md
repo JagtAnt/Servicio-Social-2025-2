@@ -1,16 +1,27 @@
-# React + Vite
+# ⚓ Propuesta de Mejora: Portal Web UMC
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una **propuesta de modernización y mejora de la interfaz de usuario (UI/UX)** para la página web oficial de la **Universidad Marítima del Caribe (UMC)**. 
 
-Currently, two official plugins are available:
+Desarrollado como parte del cumplimiento de las **horas de Servicio Social**, el objetivo principal es ofrecer una navegación más fluida, una arquitectura de información más clara y un diseño totalmente adaptativo (Responsive) que facilite el acceso a los recursos académicos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologías Utilizadas
+* **React.js** (Biblioteca principal)
+* **Vite** (Herramienta de construcción rápida)
+* **CSS3** (Estilos personalizados y Layouts Flexbox/Grid)
+* **React Router Dom** (Para la navegación entre páginas)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 💻 Cómo Ejecutar el Proyecto
 
-## Expanding the ESLint configuration
+Para visualizar esta propuesta en tu entorno local, sigue estos pasos:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Requisitos Previos
+Asegúrate de tener instalado [Node.js](https://nodejs.org/) (versión 16 o superior).
+
+### 2. Instalación
+Abre una terminal en la carpeta raíz del proyecto y ejecuta:
+
+```bash
+# Instalar las dependencias necesarias
+npm install
