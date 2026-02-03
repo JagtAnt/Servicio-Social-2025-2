@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Sidebar from "../components/Sidebar";
 
 export default function Elements() {
   useEffect(() => {
@@ -113,43 +114,7 @@ while (!deck.isInOrder()) {
         </div>
       </div>
 
-      <div id="sidebar">
-        <div className="inner">
-
-          <section id="search" className="alt">
-            <form method="post" action="#">
-              <input type="text" placeholder="Search" />
-            </form>
-          </section>
-
-          <nav id="menu">
-            <header className="major">
-              <h2>Menu</h2>
-            </header>
-            <ul>
-              <li><a href="/">Inicio</a></li>
-              <li><a href="/generic">Universidad</a></li>
-              <li><a href="/elements">Elements</a></li>
-            </ul>
-          </nav>
-
-          <section>
-            <header className="major">
-              <h2>Get in touch</h2>
-            </header>
-            <ul className="contact">
-              <li className="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-              <li className="icon solid fa-phone">(000) 000-0000</li>
-              <li className="icon solid fa-home">1234 Somewhere Road<br />Nashville, TN</li>
-            </ul>
-          </section>
-
-          <footer id="footer">
-            <p className="copyright">© Untitled. All rights reserved.</p>
-          </footer>
-
-        </div>
-      </div>
+      <Sidebar />
     </div>
   );
 }

@@ -1,4 +1,7 @@
 import React, { useEffect } from "react";
+import Sidebar from "../components/Sidebar";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 export default function Index() {
   useEffect(() => {
@@ -33,28 +36,30 @@ export default function Index() {
     };
   }, []);
 
+  useEffect(() => {
+  const timeout = setTimeout(() => {
+    document.title = "Inicio - UMC";
+  }, 100); // 100ms después de cargar todo
+  return () => clearTimeout(timeout);
+}, []);
+
   return (
     <div id="wrapper">
-
+      
       {/* Main */}
       <div id="main">
+
         <div className="inner">
 
           {/* Header */}
-          <header id="header">
-            <ul className="icons">
-              <li><a href="#" className="icon brands fa-twitter"><span className="label">Twitter</span></a></li>
-              <li><a href="#" className="icon brands fa-facebook-f"><span className="label">Facebook</span></a></li>
-              <li><a href="#" className="icon brands fa-instagram"><span className="label">Instagram</span></a></li>
-            </ul>
-          </header>
+          <Header />
 
           {/* Banner */}
           <section id="banner">
             <div className="content">
               <header>
                 <h1>Universidad Marítima<br />
-                 del Caribe</h1>
+                  del Caribe</h1>
                 <p>	Patria, escuela, buque y mar</p>
               </header>
               <p>Fundada en 1811, única universidad en Venezuela que forma profesionales marítimos.</p>
@@ -158,72 +163,13 @@ export default function Index() {
             </div>
           </section>
 
-        </div>
-      </div>
-
-      {/* Sidebar */}
-      <div id="sidebar">
-        <div className="inner">
-
-          {/* Search */}
-          <section id="search" className="alt">
-            <form method="post" action="#">
-              <input type="text" name="query" id="query" placeholder="Buscar..." />
-            </form>
-          </section>
-
-          {/* Menu */}
-          <nav id="menu">
-            <header className="major">
-              <h2>Menu</h2>
-            </header>
-            <ul>
-              <li><a href="/">Inicio</a></li>
-              <li><a href="/generic">Universidad</a></li>
-              <li><a href="/elements">Elements</a></li>
-              <li><a href="#">Etiam Dolore</a></li>
-              <li><a href="#">Adipiscing</a></li>
-              
-            </ul>
-          </nav>
-
-          {/* Mini posts */}
-          <section>
-            <header className="major">
-              <h2>Destacado</h2>
-            </header>
-            <div className="mini-posts">
-              <article>
-                <a href="#" className="image"><img src="images/pic07.jpg" alt="" /></a>
-                <p>Zona de Estudiantes, información, solicitudes, encuestas y más.</p>
-              </article>
-              <article>
-                <a href="#" className="image"><img src="images/pic08.jpg" alt="" /></a>
-                <p>Caja de ahorro de los trabajadores.</p>
-              </article>
-            </div>
-          </section>
-
-          {/* Contact */}
-          <section>
-            <header className="major">
-              <h2>Contactanos</h2>
-            </header>
-            <p>Para mas información, dudas y solvencias:</p>
-            <ul className="contact">
-              <li className="icon solid fa-envelope"><a href="#">univermaritima@gmail.com</a></li>
-              <li className="icon solid fa-phone">(0212) 350-0100</li>
-              <li className="icon solid fa-home">Av. El Ejército, Catia la Mar. Edo. La Guaira. Venezuela <br /></li>
-            </ul>
-          </section>
-
-          {/* Footer */}
-          <footer id="footer">
-            <p className="copyright">© Diseñado por Estudiantes de Ing.Informática para el servicio social de la UMC. Todos los derechos reservados.</p>
-          </footer>
+          <Footer />
 
         </div>
+
       </div>
+
+      <Sidebar />
 
     </div>
   );
