@@ -69,6 +69,22 @@ export default function Index() {
             </span>
           </section>
 
+          <section>
+            <header className="major">
+              <h2>Destacado</h2>
+            </header>
+            <div className="posts">
+              <article>
+                <a href="#" className="image"><img src="images/pic07.jpg" alt="" /></a>
+                <p>Zona de Estudiantes, información, solicitudes, encuestas y más.</p>
+              </article>
+              <article>
+                <a href="#" className="image"><img src="images/pic08.jpg" alt="" /></a>
+                <p>Caja de ahorro de los trabajadores.</p>
+              </article>
+            </div>
+          </section>
+
           {/* Section */}
           <section>
             <header className="major">
@@ -162,6 +178,8 @@ export default function Index() {
               </article>
             </div>
           </section>
+
+          
 
           <Footer />
 

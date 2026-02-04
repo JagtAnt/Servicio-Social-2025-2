@@ -21,7 +21,6 @@ const Sidebar = () => {
             <li><a href="/">Inicio</a></li>
             <li><a href="/university">Universidad</a></li>
             <li><a href="/admision">Ingreso</a></li>
-            <li><a href="/elements">Elements</a></li>
           </ul>
         </nav>
       </div>
